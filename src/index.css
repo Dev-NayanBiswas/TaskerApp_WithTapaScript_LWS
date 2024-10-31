@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono', Courier, monospace;
+}
+body{
+    height: 100%;
+    width: 100%;
+    color: #f6f2eb;
+    background: rgb(39, 64, 65);
+    font-style: italic;
+    min-block-size: 100dvh;
+}
+
+@layer components{
+    button{
+        @apply transition-all duration-300 active:scale-[.98] active:translate-y-2 hover:bg-opacity-70
+    }
+}
